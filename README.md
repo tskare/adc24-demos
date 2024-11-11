@@ -1,4 +1,4 @@
-# ADC24 Demo: Frontend Strategies for WebUI
+# ADC24 References and Demo: Frontend Strategies for WebUI
 
 ## Resources
 
@@ -7,6 +7,7 @@ ADC Slides, [PowerPoint online format](https://1drv.ms/p/c/ffeeb2b92a4e4e0d/EQ1O
 ## Code in this repository
 
 - `web/plugin-webui`: modern-web.dev scaffolding for a rotary control element supporting tests, accessibility audits, Storybook, etc.; see the available `npm` build rules. Note this is not production-ready and is intended to be a minimal `<canvas>` element.
+- `src` contains a JUCE WebUI project but the official example as well as the JUCE 8 webui [tutorial on YouTube](https://www.youtube.com/watch?v=0ALLRitFE34) are preferable to this.
 
 ## Welcoming suggestions from ADC24 and beyond
 
