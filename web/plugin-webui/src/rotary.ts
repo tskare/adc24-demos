@@ -136,6 +136,9 @@ private updateValue(event: MouseEvent) {
 }
 
 private renderCanvas() {
+    // The following is a simple example of a canvas2d element.
+    // It's not likely what you'd use in production
+    
     if (!this.canvas) return;
     const context = this.canvas.getContext('2d')!;
     if (!context) {
@@ -149,7 +152,6 @@ private renderCanvas() {
 
     // Clear the canvas
     context.fillStyle = this.colorBackground;
-    //context.clearRect(0, 0, canvas.width, canvas.height);
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     // Draw background
@@ -176,36 +178,9 @@ private renderCanvas() {
     context.font = "25px Sans-serif";
     context.textAlign = "center";
     context.fillText(`${this.value}`, canvas.width / 2, canvas.height - 30);
-    
-    // Draw nub
-
-    // Draw track
-    /*
-    context.fillStyle = this.colorForeground;
-    context.beginPath();
-    context.arc(centerX, centerY, radius * 0.8, 0, 2 * Math.PI);
-    context.fill();
-    */
-
-    // Draw value
-    /*
-    const angle = ((this.value - this.min) / (this.max - this.min)) * 2 * Math.PI - Math.PI / 2;
-    context.fillStyle = this.colorForeground;
-    context.beginPath();
-    context.moveTo(centerX, centerY);
-    context.arc(centerX, centerY, radius * 0.8, -Math.PI / 2, angle);
-    context.lineTo(centerX, centerY);
-    context.fill();
-    */
 }
 
   render() {
-    /*const containerStyles = {
-        background: this.colorBackground,
-        colorTrack: this.colorTrack,
-        foregroundColor: this.colorBackground,
-      };
-    */
    const containerStyles = {
         width: this.width + 'px',
         height: this.height + 'px',
