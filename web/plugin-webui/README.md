@@ -1,6 +1,13 @@
-<p align="center">
-  <img width="200" src="https://open-wc.org/hero.png"></img>
-</p>
+# ADC24 demo - starter rotary element
+
+This element was used to generate the video from the slide deck.
+
+It's a native web component that may be loaded in storybook.
+
+Below documentation from the soruce has been retained:
+
+
+# Adapted from modern web dev starter kit:
 
 ## Open-wc Starter App
 
